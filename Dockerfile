@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-ENV GO_VERSION=go1.17.6
+#ENV GO_VERSION=go1.17.6
 ENV DEBIAN_FRONTEND=noninteractive
 SHELL ["/bin/bash", "-c"]
 
