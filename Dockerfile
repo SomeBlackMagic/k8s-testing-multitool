@@ -3,6 +3,9 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 SHELL ["/bin/bash", "-c"]
 
+COPY locale.gen /etc/locale.gen
+RUN locale-gen
+
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends \
     apache2-utils \
